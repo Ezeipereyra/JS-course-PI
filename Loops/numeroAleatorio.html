@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Título de la página</title>
+
+    <script>
+        var numeroAleatorio = Math.round(Math.random() * 100);
+        var miNum, intentos;
+
+        miNum = 0;
+        intentos = 0;
+
+
+
+        do {
+            miNum = prompt("Introduce un numero entre 0 y 100");
+
+            if (numeroAleatorio > miNum) {
+                document.write("Mas alto" + "<br/>");
+            }
+            if (numeroAleatorio < miNum) {
+                document.write("Mas bajo" + "<br/>");
+
+            }
+            intentos++; //sumar a intentos
+
+        } while (numeroAleatorio != miNum);
+
+        document.write("Es correcto. Has consumido " + intentos + " intentos");
+
+
+    </script>
+</head>
+
+<body>
+
+    <!-- Aquí va el contenido de la página. lo visible -->
+
+</body>
+
+</html>

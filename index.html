@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mi primera página web</title>
+</head>
+
+<body>
+    <h1>Hola, mundo!</h1>
+    <h2>Galagoso</h2>
+    <p>¡Este es mi primer sitio web!</p>
+
+    <input type="button" id="button1" />
+    <input type="button" id="button2" />
+    <input type="text" id="miCuadro" />
+
+    <script> // se utiliza para insertar o hacer referencia a un script ejecutable dentro de un documento HTML
+
+        //window.alert("Mensaje de alerta");
+        //document.write("¡Hola, mundo!");
+        var miButton = document.getElementById("button1"); //almacenar el buttton1 en la variable miButton
+        var miButton2 = document.getElementById("button2");
+        var cuadroTexto = document.getElementById("miCuadro");
+
+        miButton.style.width = "260px"; //modificamos el ancho
+        miButton.style.height = "100px"; //alto
+        //miButton.style.backgroundColor="red"; //color
+        miButton2.style.width = "260px";
+
+        cuadroTexto.style.width = "500px";
+        cuadroTexto.style.backgroundColor = "red";
+
+        cuadroTexto.value = "Escriba aqui por favor : ";
+
+
+        cuadroTexto.focus();
+
+
+
+
+    </script>
+
+</body>
+
+</html>

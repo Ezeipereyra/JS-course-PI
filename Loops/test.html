@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Título de la página</title>
+</head>
+<style>
+    #contenedor {
+        width: 25%;
+        background-color: rgb(210, 210, 35);
+        margin: auto;
+        padding: 15px;
+    }
+</style>
+<script>
+    var nombre, edad, poblacion;
+    nombre = prompt("Introduce tu nombre por favor");
+    while (!isNaN(nombre)) {
+        nombre = prompt("Introduce un nombre correcto por favor", "Escribe tu nombre aqui");
+    }
+    edad = prompt("Introduce tu edad por favor");
+
+    while (edad <= 0 || edad > 105 || isNaN(edad)) {
+        edad = prompt("Introduce una edad correcta por favor");
+    }
+    poblacion = prompt("Introduce tu poblacion por favor");
+    while (!isNaN(poblacion)) {
+        poblacion = prompt("Introduce una poblacion correcta");
+    }
+
+
+
+</script>
+
+<body>
+    <div id="contenedor">
+
+        <p>Nombre : </p>
+        <script>document.write(nombre);</script>
+        <p>Edad</p>
+        <script>document.write(edad);</script>
+        <p>Poblacion</p>
+        <script>document.write(poblacion);</script>
+    </div>
+
+    <!-- Aquí va el contenido de la página. lo visible -->
+
+</body>
+
+</html>
