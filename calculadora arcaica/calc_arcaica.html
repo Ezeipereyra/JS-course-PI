@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Título de la página</title>
+</head>
+<script>
+    var repetir = "si";
+
+    while (repetir == "si") {
+        function suma(num1, num2) {
+
+            alert("La suma entre " + (num1) + " y " + (num2) + " es : " + (num1 + num2));
+        }
+        function resta(num1, num2) {
+
+            alert("La resta entre " + (num1) + " y " + (num2) + " es : " + (num1 - num2));
+        }
+        function producto(num1, num2) {
+
+            alert("El producto entre " + (num1) + " y " + (num2) + " es : " + (num1 * num2));
+        }
+
+        function division(num1, num2) {
+
+            alert("La divvision entre " + (num1) + " y " + (num2) + " es : " + (num1 / num2));
+        }
+
+        var operacion = prompt("¿Que operacion quieres realizar?");
+
+        var numero1 = parseInt(prompt("Elige un numero"));
+        var numero2 = parseInt(prompt("Elige otro numero"));
+
+        if (operacion == "suma") {
+            suma(numero1, numero2);
+
+        } else if (operacion == "resta") {
+            resta(numero1, numero2);
+
+        } else if (operacion == "suma") {
+            suma(numero1, numero2);
+
+        } else if (operacion == "producto") {
+            producto(numero1, numero2);
+
+        } else if (operacion == "division") {
+            division(numero1, numero2);
+
+        }
+        else {
+            alert("Operacion no contemplada")
+        }
+
+        repetir = prompt("Desea repetir la operacion?")
+    }
+
+
+
+
+
+
+
+
+
+</script>
+
+<body>
+
+    <!-- Aquí va el contenido de la página. lo visible -->
+
+</body>
+
+</html>
